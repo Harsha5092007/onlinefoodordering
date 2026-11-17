@@ -1,0 +1,76 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Online Food Ordering System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>Online Food Ordering System</h1>
+
+<!-- Customer Registration and Login -->
+
+<h2>Customer Account</h2>
+
+<input type="text" id="username" placeholder="Enter Name">
+<input type="email" id="email" placeholder="Enter Email">
+<input type="password" id="password" placeholder="Enter Password">
+
+<button onclick="register()">Register</button>
+<button onclick="login()">Login</button>
+<button onclick="logout()">Logout</button>
+
+<p id="message">Please Login or Register</p>
+
+<hr>
+
+<!-- Food Menu -->
+
+<h2>Food Menu</h2>
+
+<div id="foodMenu"></div>
+
+<hr>
+
+<!-- Order Details -->
+
+<h2>Order Details</h2>
+
+<div id="orderDetails">No orders yet</div>
+
+<hr>
+
+<!-- Admin Login -->
+
+<h2>Admin Login</h2>
+
+<input type="text" id="adminName" placeholder="Admin Username">
+<input type="password" id="adminPassword" placeholder="Admin Password">
+
+<button onclick="adminLogin()">Admin Login</button>
+
+<p id="adminMessage"></p>
+
+<!-- Admin Food Management -->
+
+<div id="adminSection" style="display:none;">
+
+    <h2>Manage Food Items</h2>
+
+    <input type="text" id="foodName" placeholder="Food Name">
+    <input type="number" id="foodPrice" placeholder="Food Price">
+    <input type="text" id="foodImage" placeholder="Image URL">
+
+    <button onclick="addFood()">Add Food</button>
+
+    <h3>Existing Food Items</h3>
+
+    <div id="adminFoodList"></div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
